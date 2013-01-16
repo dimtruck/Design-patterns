@@ -1,0 +1,80 @@
+[
+ {
+  "name":"Factory pattern",
+  "description":"Define factory interface.  Define subclasses that implement theinterface.  Use subclasses to determine the logic implemented for factory methods.",
+  "image":"images/test.jpeg",
+  "type":"creational",
+  "useCase":"Use it when you want to encapsulate object creation from user.  User can pick own factory to use by implementing the factory interface and its methods.",
+  "examples":[
+    {
+      "name":"Create animals example",
+      "code":"Code here"
+    }
+  ]
+ },
+ {
+  "name":"Telescoping constructor pattern",
+  "description":"Define one constructor to initialize all data with other overloaded patterns passing data to it at instantiation.",
+  "image":"images/test.jpeg",
+  "type":"creational",
+  "useCase":"Use it when there are many optional parameters involved.  Moving all logic into one method helps with maintaining object creation.",
+  "examples":[
+    {
+      "name":"Create animals example",
+      "code":"Code here"
+    }
+  ]
+ },
+ {
+  "name":"Static factory method pattern",
+  "description":"Define static factory method for instantiation of objects instead of constructors.",
+  "image":"images/test.jpeg",
+  "type":"creational",
+  "useCase":"Use it when you want to encapsulate object being created.  Use it for singletons, subtype object creation, and immutability.",
+  "examples":[
+    {
+      "name":"Create animals example - singleton",
+      "code":"Code here"
+    }
+  ]
+ },
+ {
+  "name":"Member builder pattern",
+  "description":"Define constructor with all required parameters.  Call static member 'builder' class, which sets all optional values, in the constructor.  Can be replaced by optional parameters.",
+  "image":"images/test.jpeg",
+  "type":"creational",
+  "useCase":"Use it when you have many optional parameters.  Better option than telescoping pattern if the combination of optional parameters lead you to create many overloaded constructors.  Keeps code maintainable.",
+  "examples":[
+    {
+      "name":"Create animals example",
+      "code":"Code here"
+    }
+  ]
+ },
+ {
+  "name":"Singleton pattern",
+  "description":"Ensure only one instance of an object exists in the application.",
+  "image":"images/test.jpeg",
+  "type":"creational",
+  "useCase":"Use it when you want only one instance of an objects to be created.",
+  "examples":[
+    {
+      "name":"Create animals example",
+      "code":"Code here"
+    }
+  ]
+ },
+ {
+  "name":"Builder pattern",
+  "description":"Encapsulate object construction.",
+  "image":"images/test.jpeg",
+  "type":"creational",
+  "useCase":"Use it when you want to encapsulate very complex logic.  Can be used in tandem with the factory pattern.",
+  "examples":[
+    {
+      "name":"Create animals example",
+      "code":"Code here"
+    }
+  ]
+ }
+]

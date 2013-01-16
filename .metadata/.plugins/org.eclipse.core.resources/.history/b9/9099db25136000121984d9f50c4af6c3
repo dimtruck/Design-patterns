@@ -1,0 +1,17 @@
+package com.designpatterns.templates;
+
+public class BehavioralTemplate implements Template {
+
+	@Override
+	public String create(String... patterns) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("<h2>Behavioral Patterns</h2>");
+		sb.append("<ul>");
+		for(String pattern: patterns){
+			sb.append("<li class='" + pattern.replace(' ', '_') + "'>" + pattern + "</li>");
+		}
+		sb.append("</ul>");
+		return sb.toString();
+	}
+
+}

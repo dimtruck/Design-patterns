@@ -7,3 +7,6 @@
 1358356514196	Extract interface 'EnumInterface'
 1358356536951	Delete element
 1358356717116	Delete element
+1358361161390	Rename type 'CreationalTemplateStrategy'
+1358361175690	Rename type 'TemplateStrategy'
+1358361413463	Rename type 'BehavioralTemplateStrategy'

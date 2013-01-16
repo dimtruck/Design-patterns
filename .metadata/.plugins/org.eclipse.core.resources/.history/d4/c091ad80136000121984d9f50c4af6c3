@@ -1,0 +1,19 @@
+package com.designpatterns.templates;
+
+import java.util.List;
+
+import com.designpatterns.entities.Pattern;
+
+public class BehavioralTemplate implements Template {
+
+	@Override
+	public StringBuffer create(String language, List<Pattern> patterns) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("<h2>Behavioral Patterns</h2>");
+		sb.append("<ul>");
+		for(Pattern pattern: patterns){
+			sb.append("<li class='" + pattern.getName().replace(' ', '_') + "'>" + pattern + "</li>");
+		}
+		sb.append("</ul>");
+		return sb;
+	}

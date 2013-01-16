@@ -1,0 +1,56 @@
+package com.designpatterns.listeners;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+import com.designpatterns.enums.Language;
+import com.designpatterns.enums.PatternType;
+import com.designpatterns.factories.JavaFactory;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+import com.designpatterns.templates.BehavioralTemplateStrategy;
+import com.designpatterns.templates.CreationalTemplateStrategy;
+import com.designpatterns.templates.TemplateStrategy;
+
+/**
+ * Application Lifecycle Listener implementation class StartupListener
+ *
+ */
+@WebListener
+public class StartupListener implements ServletContextListener {
+	private ServletContext context;
+    /**
+     * Default constructor. 
+     */
+    public StartupListener() {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+     * @see ServletContextListener#contextInitialized(ServletContextEvent)
+     */
+    public void contextInitialized(ServletContextEvent contextEvent) {
+        Map<PatternType, TemplateStrategy> patternTypeMap = new HashMap<PatternType, TemplateStrategy>();
+        patternTypeMap.put(PatternType.CREATIONAL, new CreationalTemplateStrategy());
+        patternTypeMap.put(PatternType.BEHAVIORAL, new BehavioralTemplateStrategy());
+        
+        Map<Language, LanguageFactory> languageFactoryMap = new HashMap<Language,LanguageFactory>();
+        languageFactoryMap.put(Language.JAVA, new JavaFactory());
+    	
+    	context = contextEvent.getServletContext();
+        context.setAttribute("PatternTypes", patternTypeMap);
+        
+    }
+
+	/**
+     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
+     */
+    public void contextDestroyed(ServletContextEvent arg0) {
+        // TODO Auto-generated method stub
+    }
+	
+}

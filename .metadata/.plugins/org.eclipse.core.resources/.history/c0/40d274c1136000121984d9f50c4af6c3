@@ -1,0 +1,10 @@
+package com.designpatterns.templates;
+
+public class FooterTemplate implements Template {
+
+	@Override
+	public String create(String... patterns) {
+		return "</body></html";
+	}
+
+}

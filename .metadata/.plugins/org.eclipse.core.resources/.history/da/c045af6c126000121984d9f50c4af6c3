@@ -1,0 +1,84 @@
+package com.designpatterns.factories;
+
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.List;
+
+import org.json.simple.*;
+import org.json.simple.parser.JSONParser;
+
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.entities.PatternExample;
+import com.designpatterns.enums.Language;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+import com.designpatterns.factories.interfaces.PatternFactory;
+import com.designpatterns.templates.CreationalTemplate;
+import com.designpatterns.templates.Template;
+import com.designpatterns.templates.TemplateContext;
+
+
+public class JavaFactory implements LanguageFactory {
+
+	@Override
+	public String buildPage() {
+		// TODO Auto-generated method stub
+		//retrieve all creational patterns
+		//build a header
+		//build a list of patterns
+		//build a footer
+		return null;
+	}
+
+	@Override
+	public String buildPatternTypePage(Template patternType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private List<Pattern> getJavaPatterns(){
+		JSONParser parser = new JSONParser();
+		JSONArray patternArray = (JSONArray) parser.parse(new FileReader("java-patterns.json"));
+		for(Object p : patternArray){
+			JSONObject jsonPattern = (JSONObject)p;
+			
+			//get examples and convert
+			List<PatternExample> list = new ArrayList<PatternExample>();
+			JSONArray exampleArray = (JSONArray)jsonPattern.get("examples");
+			for(Object e : exampleArray){
+				list.add(PatternExample.createPatternExample(
+						(String)jsonPattern.get("name"), 
+						(String)jsonPattern.get("code")));
+			}
+			
+			Pattern pattern = Pattern.createPattern(
+					(String)jsonPattern.get("name"), 
+					(String)jsonPattern.get("description"), 
+					Language.JAVA, 
+					(String)jsonPattern.get("image"), 
+					list);
+					
+		}
+
+		  for (Object o : a)
+		  {
+		    JSONObject person = (JSONObject) o;
+
+		    String name = (String) person.get("name");
+		    System.out.println(name);
+
+		    String city = (String) person.get("city");
+		    System.out.println(city);
+
+		    String job = (String) person.get("job");
+		    System.out.println(job);
+
+		    JSONArray cars = (JSONArray) jsonObject.get("cars");
+
+		    for (Object c : cars)
+		    {
+		      System.out.println(c+"");
+		    }
+		  }
+	}
+
+}

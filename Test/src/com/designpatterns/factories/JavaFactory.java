@@ -1,24 +1,32 @@
 package com.designpatterns.factories;
 
-import java.util.HashMap;
+import java.util.List;
 
 import com.designpatterns.entities.Pattern;
 import com.designpatterns.factories.interfaces.LanguageFactory;
-import com.designpatterns.factories.interfaces.PatternFactory;
-import com.designpatterns.templates.TemplateStrategy;
+import com.designpatterns.templates.BehavioralTemplate;
+import com.designpatterns.templates.CreationalTemplate;
+import com.designpatterns.templates.FooterTemplate;
+import com.designpatterns.templates.HeaderTemplate;
+import com.designpatterns.templates.Template;
+import com.designpatterns.templates.TemplateContext;
+
 
 public class JavaFactory implements LanguageFactory {
+	private final String language = "Java";
 
 	@Override
-	public String buildPage() {
+	public String buildPage(String realContextPath) {
 		// TODO Auto-generated method stub
-		return null;
+		List<Pattern> patternList = JsonFactory.getPatterns(realContextPath, "java-patterns.json");
+		return new TemplateContext(new HeaderTemplate(),
+				new CreationalTemplate(), new BehavioralTemplate(), new FooterTemplate())
+		.BuildTemplate(language, patternList);
 	}
 
 	@Override
-	public String buildPatternTypePage(TemplateStrategy patternType) {
+	public String buildPatternTypePage(Template patternType) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

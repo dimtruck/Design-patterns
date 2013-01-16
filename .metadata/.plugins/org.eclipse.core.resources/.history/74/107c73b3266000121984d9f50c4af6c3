@@ -1,0 +1,24 @@
+package com.designpatterns.tests;
+
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.designpatterns.common.IndexPage;
+
+public class HomeTest {
+
+	@Test
+	public void home_page_test(){
+		WebDriver driver = new FirefoxDriver();
+		IndexPage page = new IndexPage(driver);
+		Assert.assertTrue(driver.findElement(By.linkText("Java Patterns")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.linkText("C# Patterns")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.linkText("Ruby Patterns")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.linkText("JavaScript Patterns")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.linkText("Erlang Patterns")).isDisplayed());
+	}
+}

@@ -1,0 +1,78 @@
+package com.designpatterns.factories;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.entities.PatternExample;
+import com.designpatterns.enums.Language;
+import com.designpatterns.enums.PatternType;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+
+public class JsonFactory {
+	public static List<Pattern> getPatterns(String realContextPath, String filePath){
+		List<Pattern> patternList = new ArrayList<Pattern>();
+		JSONParser parser = new JSONParser();
+		JSONArray patternArray;
+		try {
+			File f = new File(realContextPath + File.separatorChar + "test.json");
+			String y = f.getCanonicalPath();
+			String t = f.getAbsolutePath();
+			f.createNewFile();
+			patternArray = (JSONArray) parser.parse(new FileReader(filePath));
+			for(Object p : patternArray){
+				JSONObject jsonPattern = (JSONObject)p;
+				
+				//get examples and convert
+				List<PatternExample> list = new ArrayList<PatternExample>();
+				JSONArray exampleArray = (JSONArray)jsonPattern.get("examples");
+				for(Object e : exampleArray){
+					JSONObject jsonExample = (JSONObject)e;
+					list.add(PatternExample.createPatternExample(
+							(String)jsonExample.get("name"), 
+							(String)jsonExample.get("code")));
+				}
+				
+				patternList.add(Pattern.createPattern(
+						(String)jsonPattern.get("name"), 
+						(String)jsonPattern.get("description"), 
+						Language.JAVA, 
+						(String)jsonPattern.get("image"), 
+						list));
+						
+			}
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (ParseException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		return patternList;
+	}
+
+	private PatternType retrievePatternType(String patternType) {
+		for(PatternType patternTypeEnum : PatternType.values()){
+			if(patternTypeEnum.patternName().equals(patternType))
+			{
+				return patternTypeEnum;
+			}
+		}
+		
+		return PatternType.NONE;
+	}
+
+}

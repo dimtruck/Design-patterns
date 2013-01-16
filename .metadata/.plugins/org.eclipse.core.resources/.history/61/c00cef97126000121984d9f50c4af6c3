@@ -1,0 +1,66 @@
+package com.designpatterns.factories;
+
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.json.simple.*;
+import org.json.simple.parser.JSONParser;
+
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.entities.PatternExample;
+import com.designpatterns.enums.Language;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+import com.designpatterns.factories.interfaces.PatternFactory;
+import com.designpatterns.templates.CreationalTemplate;
+import com.designpatterns.templates.Template;
+import com.designpatterns.templates.TemplateContext;
+
+
+public class JavaFactory implements LanguageFactory {
+
+	@Override
+	public String buildPage() {
+		// TODO Auto-generated method stub
+		//retrieve all creational patterns
+		//build a header
+		//build a list of patterns
+		//build a footer
+		return null;
+	}
+
+	@Override
+	public String buildPatternTypePage(Template patternType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private List<Pattern> getJavaPatterns(){
+		List<Pattern> patternList = new ArrayList<Pattern>();
+		JSONParser parser = new JSONParser();
+		JSONArray patternArray = (JSONArray) parser.parse(new FileReader("java-patterns.json"));
+		for(Object p : patternArray){
+			JSONObject jsonPattern = (JSONObject)p;
+			
+			//get examples and convert
+			List<PatternExample> list = new ArrayList<PatternExample>();
+			JSONArray exampleArray = (JSONArray)jsonPattern.get("examples");
+			for(Object e : exampleArray){
+				list.add(PatternExample.createPatternExample(
+						(String)jsonPattern.get("name"), 
+						(String)jsonPattern.get("code")));
+			}
+			
+			patternList.add(Pattern.createPattern(
+					(String)jsonPattern.get("name"), 
+					(String)jsonPattern.get("description"), 
+					Language.JAVA, 
+					(String)jsonPattern.get("image"), 
+					list));
+					
+		}
+		return patternList;
+	}
+
+}

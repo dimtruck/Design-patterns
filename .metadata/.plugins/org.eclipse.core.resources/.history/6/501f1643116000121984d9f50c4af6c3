@@ -1,0 +1,43 @@
+package com.designpatterns.entities;
+
+import com.designpatterns.enums.Language;
+
+public class Pattern {
+
+	private String name;
+	private Language language;
+	private String image;
+	private PatternExample example;
+	private String description;
+	
+	public String getName(){return this.name;}
+	public void setName(String name){this.name = name;}
+	
+	public Language getLanguage(){return this.language;}
+	public void setLanguage(Language language){this.language = language;}
+	
+	public String getImage(){return this.image;}
+	public void setImage(String image){this.image = image;}
+	
+	public PatternExample getExample(){return this.example;}
+	public void setExample(PatternExample example){this.example = example;}
+	
+	public String getDescription(){return this.description;}
+	public void setDescription(String description){this.description = description;}
+	
+	private Pattern(){}
+	
+	private Pattern(String name, String description, Language language, 
+			String image, PatternExample example){
+		this.name = name;
+		this.description = description;
+		this.language = language;
+		this.image = image;
+		this.example = example;		
+	}
+	
+	public static Pattern createPattern(String name, String description, Language language, 
+			String image, PatternExample example){
+		return new Pattern(name,description,language,image,example);
+	}
+}

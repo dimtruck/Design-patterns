@@ -1,5 +1,25 @@
 package com.designpatterns.entities;
 
-public interface PatternExample {
+public class PatternExample {
 
+	private String name;
+	private String code;
+	
+	public String getName(){return this.name;}
+	public void setName(String name){this.name = name;}
+	
+	public String getCode(){return this.code;}
+	public void setCode(String code){this.code = code;}
+	
+	private PatternExample() {
+	}
+	
+	private PatternExample(String name, String code){
+		this.name = name;
+		this.code = code;
+	}
+	
+	public static PatternExample createPatternExample(String name, String code){
+		return new PatternExample(name,code);
+	}
 }

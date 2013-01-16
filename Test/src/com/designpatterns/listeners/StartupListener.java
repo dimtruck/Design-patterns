@@ -12,9 +12,9 @@ import com.designpatterns.enums.Language;
 import com.designpatterns.enums.PatternType;
 import com.designpatterns.factories.JavaFactory;
 import com.designpatterns.factories.interfaces.LanguageFactory;
-import com.designpatterns.templates.BehavioralTemplateStrategy;
-import com.designpatterns.templates.CreationalTemplateStrategy;
-import com.designpatterns.templates.TemplateStrategy;
+import com.designpatterns.templates.BehavioralTemplate;
+import com.designpatterns.templates.CreationalTemplate;
+import com.designpatterns.templates.Template;
 
 /**
  * Application Lifecycle Listener implementation class StartupListener
@@ -34,9 +34,9 @@ public class StartupListener implements ServletContextListener {
      * @see ServletContextListener#contextInitialized(ServletContextEvent)
      */
     public void contextInitialized(ServletContextEvent contextEvent) {
-        Map<PatternType, TemplateStrategy> patternTypeMap = new HashMap<PatternType, TemplateStrategy>();
-        patternTypeMap.put(PatternType.CREATIONAL, new CreationalTemplateStrategy());
-        patternTypeMap.put(PatternType.BEHAVIORAL, new BehavioralTemplateStrategy());
+        Map<PatternType, Template> patternTypeMap = new HashMap<PatternType, Template>();
+        patternTypeMap.put(PatternType.CREATIONAL, new CreationalTemplate());
+        patternTypeMap.put(PatternType.BEHAVIORAL, new BehavioralTemplate());
         
         Map<Language, LanguageFactory> languageFactoryMap = new HashMap<Language,LanguageFactory>();
         languageFactoryMap.put(Language.JAVA, new JavaFactory());

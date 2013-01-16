@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Selenium" project="Selenium" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.designpatterns.tests.JavaTest" time="6.069">
+    <testcase name="java_page_test" classname="com.designpatterns.tests.JavaTest" time="6.069"/>
+  </testsuite>
+  <testsuite name="com.designpatterns.tests.HomeTest" time="0.829">
+    <testcase name="home_page_test" classname="com.designpatterns.tests.HomeTest" time="0.829"/>
+  </testsuite>
+</testrun>

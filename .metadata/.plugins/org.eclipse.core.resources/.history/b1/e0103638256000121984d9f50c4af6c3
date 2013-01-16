@@ -1,0 +1,22 @@
+package com.designpatterns.common;
+
+import org.junit.Assert;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class IndexTest {
+	private WebDriver driver;
+	
+	public void HomeTest(WebDriver driver){
+		this.driver = driver;
+		driver.get("http://localhost:8080/Test");
+		if(!driver.getTitle().equals("Design Patterns"))
+			throw new IllegalStateException("was unable to get to home page. Currently here: " + driver.getCurrentUrl());
+	}
+	
+	public void finish(){
+		this.driver.quit();
+	}
+}

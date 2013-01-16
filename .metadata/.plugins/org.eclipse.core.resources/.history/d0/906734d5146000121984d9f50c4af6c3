@@ -1,0 +1,42 @@
+package com.designpatterns.factories;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.json.simple.*;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.entities.PatternExample;
+import com.designpatterns.enums.Language;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+import com.designpatterns.factories.interfaces.PatternFactory;
+import com.designpatterns.templates.CreationalTemplate;
+import com.designpatterns.templates.Template;
+import com.designpatterns.templates.TemplateContext;
+
+
+public class JavaFactory implements LanguageFactory {
+
+	@Override
+	public String buildPage() {
+		// TODO Auto-generated method stub
+		List<Pattern> patternList = JsonFactory.getPatterns("java-patterns.json");
+		//retrieve all creational patterns
+		//build a header
+		//build a list of patterns
+		//build a footer
+		return null;
+	}
+
+	@Override
+	public String buildPatternTypePage(Template patternType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

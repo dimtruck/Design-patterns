@@ -1,0 +1,11 @@
+package com.designpatterns.templates;
+
+public class TemplateContext {
+	private final Template template;
+	public TemplateContext(Template template) {
+		this.template = template;
+	}
+	public String BuildTemplate(String...patterns){
+		return template.create(patterns);
+	}
+}

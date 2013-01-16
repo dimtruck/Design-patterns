@@ -1,0 +1,27 @@
+package com.designpatterns.factories;
+
+import java.util.HashMap;
+
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+import com.designpatterns.factories.interfaces.PatternFactory;
+import com.designpatterns.templates.Template;
+
+public class JavaFactory implements LanguageFactory {
+
+	@Override
+	public String buildPage() {
+		// TODO Auto-generated method stub
+		//build a header
+		//build a list of patterns
+		//build a footer
+		return null;
+	}
+
+	@Override
+	public String buildPatternTypePage(Template patternType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

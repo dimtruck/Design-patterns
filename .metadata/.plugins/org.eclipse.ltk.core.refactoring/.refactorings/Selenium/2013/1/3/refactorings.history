@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.designpatterns.common.IndexTest&apos; to &apos;IndexPage&apos;&#x0A;- Original project: &apos;Selenium&apos;&#x0A;- Original element: &apos;com.designpatterns.common.IndexTest&apos;&#x0A;- Renamed element: &apos;com.designpatterns.common.IndexPage&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IndexTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.designpatterns.common{IndexTest.java[IndexTest" matchStrategy="1" name="IndexPage" qualified="false" references="true" similarDeclarations="false" stamp="1358372374874" textual="false" version="1.0"/>
+</session>

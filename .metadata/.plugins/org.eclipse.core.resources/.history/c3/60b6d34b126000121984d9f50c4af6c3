@@ -1,0 +1,59 @@
+package com.designpatterns.factories;
+
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.List;
+
+import org.json.simple.*;
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.factories.interfaces.LanguageFactory;
+import com.designpatterns.factories.interfaces.PatternFactory;
+import com.designpatterns.templates.CreationalTemplate;
+import com.designpatterns.templates.Template;
+import com.designpatterns.templates.TemplateContext;
+
+
+public class JavaFactory implements LanguageFactory {
+
+	@Override
+	public String buildPage() {
+		// TODO Auto-generated method stub
+		//retrieve all creational patterns
+		//build a header
+		//build a list of patterns
+		//build a footer
+		return null;
+	}
+
+	@Override
+	public String buildPatternTypePage(Template patternType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private List<Pattern> getJavaPatterns(){
+		 JSONArray a = (JSONArray) parser.parse(new FileReader("java-patterns.json"));
+
+		  for (Object o : a)
+		  {
+		    JSONObject person = (JSONObject) o;
+
+		    String name = (String) person.get("name");
+		    System.out.println(name);
+
+		    String city = (String) person.get("city");
+		    System.out.println(city);
+
+		    String job = (String) person.get("job");
+		    System.out.println(job);
+
+		    JSONArray cars = (JSONArray) jsonObject.get("cars");
+
+		    for (Object c : cars)
+		    {
+		      System.out.println(c+"");
+		    }
+		  }
+	}
+
+}

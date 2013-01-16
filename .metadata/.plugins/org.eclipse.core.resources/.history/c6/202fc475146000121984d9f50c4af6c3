@@ -1,0 +1,15 @@
+package com.designpatterns.templates;
+
+import java.util.List;
+
+import com.designpatterns.entities.Pattern;
+
+public class TemplateContext {
+	private final Template template;
+	public TemplateContext(Template template) {
+		this.template = template;
+	}
+	public StringBuffer BuildTemplate(String language, List<Pattern> patterns){
+		return template.create(language, patterns);
+	}
+}

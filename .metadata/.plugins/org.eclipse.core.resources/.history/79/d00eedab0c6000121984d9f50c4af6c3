@@ -1,0 +1,11 @@
+package com.designpatterns.templates;
+
+public class HeaderTemplate implements Template {
+
+	@Override
+	public String create(String... patterns) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

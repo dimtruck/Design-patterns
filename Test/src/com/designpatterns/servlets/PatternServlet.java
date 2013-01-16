@@ -17,7 +17,7 @@ import com.designpatterns.enums.Language;
 import com.designpatterns.enums.PatternType;
 import com.designpatterns.factories.interfaces.LanguageFactory;
 import com.designpatterns.factories.interfaces.PatternFactory;
-import com.designpatterns.templates.TemplateStrategy;
+import com.designpatterns.templates.Template;
 
 /**
  * Servlet implementation class Home
@@ -25,7 +25,7 @@ import com.designpatterns.templates.TemplateStrategy;
 @WebServlet( name="PatternServlet", displayName="Pattern Servlet", urlPatterns = {"/pattern"}, loadOnStartup=1)
 public class PatternServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private Map<PatternType,TemplateStrategy> patternTypeMap = null;
+	private Map<PatternType,Template> patternTypeMap = null;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -47,10 +47,12 @@ public class PatternServlet extends HttpServlet {
 		LanguageFactory languageFactory = retrieveLanguageFactory(languageRequest);
 
 		String patternRequest = request.getParameter("pattern");
+		ServletContext context = request.getSession().getServletContext();
+		String realContextPath = context.getRealPath(request.getContextPath()); 
 		
 		PrintWriter printWriter = response.getWriter();
 		if(patternRequest == null)
-			printWriter.write(languageFactory.buildPage());
+			printWriter.write(languageFactory.buildPage(realContextPath));
 		else 
 			printWriter.write(languageFactory.buildPatternTypePage(null));
 		printWriter.flush();
@@ -66,17 +68,7 @@ public class PatternServlet extends HttpServlet {
 		
 		return Language.NONE.getFactory();
 	}
-
-	private PatternFactory retrievePatternFactory(String request) {
-		for(PatternType pattern : PatternType.values()){
-			if(pattern.patternName().equals(request))
-			{
-				return pattern.getFactory();
-			}
-		}
-		
-		return PatternType.NONE.getFactory();
-	}
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

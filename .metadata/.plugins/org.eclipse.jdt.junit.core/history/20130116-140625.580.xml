@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Selenium" project="Selenium" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.designpatterns.tests.HomeTest" time="0.001">
+    <testcase name="home_page_test" classname="com.designpatterns.tests.HomeTest" time="0.001">
+      <error>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Java Patterns"}
+Command duration or timeout: 161 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:45'
+System info: os.name: 'Linux', os.arch: 'i386', os.version: '3.2.0-23-generic-pae', java.version: '1.6.0_24'
+Session ID: 8598c0f8-528e-4dbc-a7a9-cd1dd3328e1b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=11.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:532)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:339)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at com.designpatterns.tests.HomeTest.home_page_test(HomeTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"link text","selector":"Java Patterns"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:45'
+System info: os.name: 'Linux', os.arch: 'i386', os.version: '3.2.0-23-generic-pae', java.version: '1.6.0_24'
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8620811591522038639webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8620811591522038639webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8620811591522038639webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8620811591522038639webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8620811591522038639webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
