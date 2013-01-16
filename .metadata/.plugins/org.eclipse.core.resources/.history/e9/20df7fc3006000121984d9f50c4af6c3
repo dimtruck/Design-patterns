@@ -1,0 +1,22 @@
+package com.designpatterns.enums;
+
+import com.designpatterns.factories.interfaces.LanguageFactory;
+
+public enum AbstractEnum {
+	
+	protected final String name;
+	protected final LanguageFactory factory;
+
+	AbstractEnum(String name, LanguageFactory factory){
+		this.name = name;
+		this.factory = factory;
+	}
+	
+	public String languageName(){
+		return this.name;
+	}
+	
+	public LanguageFactory getFactory(){
+		return this.factory;
+	}
+}

@@ -1,0 +1,24 @@
+package com.designpatterns.factories;
+
+import java.util.HashMap;
+
+import com.designpatterns.entities.Pattern;
+import com.designpatterns.factories.interfaces.PatternFactory;
+import com.designpatterns.templates.TemplateStrategy;
+
+public class CreationalFactory implements PatternFactory {
+
+	@Override
+	public Pattern createPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PatternFactory setStrategyMap(
+			HashMap<Pattern, TemplateStrategy> strategyMap) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

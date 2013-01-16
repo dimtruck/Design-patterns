@@ -1,0 +1,652 @@
+!SESSION 2013-01-14 08:21:57.163 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2013-01-15 21:59:50.819
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-01-15 22:04:42.536 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:06:55.272
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:06:55.272
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.272
+!MESSAGE Software being installed: Dali Java Persistence Tools Plug-in SDK 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp (org.eclipse.jpt_sdk.feature.feature.group 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.272
+!MESSAGE Missing requirement: Dali Java Persistence Tools - DB UI 1.1.100.v200906070220 (org.eclipse.jpt.db.ui 1.1.100.v200906070220) requires 'bundle org.eclipse.datatools.connectivity.ui [1.1.0,1.2.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:06:55.272
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.272
+!MESSAGE From: Dali Java Persistence Tools 2.2.2.v200911250220-7L7OAPFBBoPS0TBgXV1je (org.eclipse.jpt.feature.feature.group 2.2.2.v200911250220-7L7OAPFBBoPS0TBgXV1je)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.272
+!MESSAGE To: org.eclipse.jpt.db.ui [1.1.100.v200906070220]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:06:55.272
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.272
+!MESSAGE From: Dali Java Persistence Tools Plug-in SDK 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp (org.eclipse.jpt_sdk.feature.feature.group 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.272
+!MESSAGE To: org.eclipse.jpt.feature.feature.group [2.2.2.v200911250220-7L7OAPFBBoPS0TBgXV1je]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:06:55.291
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:06:55.291
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.291
+!MESSAGE Software being installed: Dali Java Persistence Tools Plug-in SDK 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp (org.eclipse.jpt_sdk.feature.feature.group 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.291
+!MESSAGE Missing requirement: Dali Java Persistence Tools - DB UI 1.1.100.v200906070220 (org.eclipse.jpt.db.ui 1.1.100.v200906070220) requires 'bundle org.eclipse.datatools.connectivity.ui [1.1.0,1.2.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:06:55.291
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.291
+!MESSAGE From: Dali Java Persistence Tools 2.2.2.v200911250220-7L7OAPFBBoPS0TBgXV1je (org.eclipse.jpt.feature.feature.group 2.2.2.v200911250220-7L7OAPFBBoPS0TBgXV1je)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.291
+!MESSAGE To: org.eclipse.jpt.db.ui [1.1.100.v200906070220]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:06:55.291
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.291
+!MESSAGE From: Dali Java Persistence Tools Plug-in SDK 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp (org.eclipse.jpt_sdk.feature.feature.group 2.2.2.v200911250220-65390UCTXVRIQtYa5VM2gvF9wCCp)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:06:55.291
+!MESSAGE To: org.eclipse.jpt.feature.feature.group [2.2.2.v200911250220-7L7OAPFBBoPS0TBgXV1je]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:07:40.185
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.185
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.185
+!MESSAGE Software being installed: Eclipse XML Editors and Tools 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo (org.eclipse.wst.xml_ui.feature.feature.group 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.185
+!MESSAGE Missing requirement: Java EMF Model Utilities 2.0.201.v201001252130 (org.eclipse.jem.util 2.0.201.v201001252130) requires 'bundle com.ibm.icu [3.8.1.1,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.185
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.185
+!MESSAGE From: WST Common Core 3.1.1.v200908102300-7B77FZ6F7RZHKDIwRlOwUN (org.eclipse.wst.common_core.feature.feature.group 3.1.1.v200908102300-7B77FZ6F7RZHKDIwRlOwUN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.185
+!MESSAGE To: org.eclipse.jem.util [2.0.201.v201001252130]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.186
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.186
+!MESSAGE From: WST Common UI 3.1.1.v200908102300-7B5FRHDhdMOGnoekn4gtEJxSmPxV (org.eclipse.wst.common_ui.feature.feature.group 3.1.1.v200908102300-7B5FRHDhdMOGnoekn4gtEJxSmPxV)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.186
+!MESSAGE To: org.eclipse.wst.common_core.feature.feature.group [3.1.1.v200908102300-7B77FZ6F7RZHKDIwRlOwUN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.186
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.187
+!MESSAGE From: Eclipse XML Editors and Tools 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo (org.eclipse.wst.xml_ui.feature.feature.group 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.187
+!MESSAGE To: org.eclipse.wst.common_ui.feature.feature.group [3.1.1.v200908102300-7B5FRHDhdMOGnoekn4gtEJxSmPxV]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:07:40.195
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.195
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE Software being installed: Eclipse XML Editors and Tools 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo (org.eclipse.wst.xml_ui.feature.feature.group 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE Missing requirement: Java EMF Model Utilities 2.0.201.v201001252130 (org.eclipse.jem.util 2.0.201.v201001252130) requires 'bundle com.ibm.icu [3.8.1.1,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.195
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE From: WST Common Core 3.1.1.v200908102300-7B77FZ6F7RZHKDIwRlOwUN (org.eclipse.wst.common_core.feature.feature.group 3.1.1.v200908102300-7B77FZ6F7RZHKDIwRlOwUN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE To: org.eclipse.jem.util [2.0.201.v201001252130]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.195
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE From: WST Common UI 3.1.1.v200908102300-7B5FRHDhdMOGnoekn4gtEJxSmPxV (org.eclipse.wst.common_ui.feature.feature.group 3.1.1.v200908102300-7B5FRHDhdMOGnoekn4gtEJxSmPxV)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE To: org.eclipse.wst.common_core.feature.feature.group [3.1.1.v200908102300-7B77FZ6F7RZHKDIwRlOwUN]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:07:40.195
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE From: Eclipse XML Editors and Tools 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo (org.eclipse.wst.xml_ui.feature.feature.group 3.1.1.v200907161031-7H6FMbDxtkMs9OeLGF98LRhdPKeo)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:07:40.195
+!MESSAGE To: org.eclipse.wst.common_ui.feature.feature.group [3.1.1.v200908102300-7B5FRHDhdMOGnoekn4gtEJxSmPxV]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:08:36.012
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:08:36.012
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.012
+!MESSAGE Software being installed: Eclipse Java EE Developer Tools 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj (org.eclipse.jst.enterprise_ui.feature.feature.group 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.012
+!MESSAGE Missing requirement: WTP J2EE UI Plug-in 1.1.301.v200909020100 (org.eclipse.jst.j2ee.ui 1.1.301.v200909020100) requires 'bundle com.ibm.icu [3.4.4,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:08:36.012
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.012
+!MESSAGE From: Eclipse Java EE Developer Tools 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj (org.eclipse.jst.enterprise_ui.feature.feature.group 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.012
+!MESSAGE To: org.eclipse.jst.j2ee.ui [1.1.301.v200909020100]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:08:36.022
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:08:36.022
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.022
+!MESSAGE Software being installed: Eclipse Java EE Developer Tools 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj (org.eclipse.jst.enterprise_ui.feature.feature.group 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.022
+!MESSAGE Missing requirement: WTP J2EE UI Plug-in 1.1.301.v200909020100 (org.eclipse.jst.j2ee.ui 1.1.301.v200909020100) requires 'bundle com.ibm.icu [3.4.4,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:08:36.022
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.022
+!MESSAGE From: Eclipse Java EE Developer Tools 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj (org.eclipse.jst.enterprise_ui.feature.feature.group 3.1.1.v200908101600-7_7EGrfFQRwRZTMYz07YrGeRz0Tj)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:08:36.022
+!MESSAGE To: org.eclipse.jst.j2ee.ui [1.1.301.v200909020100]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:09:58.433
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.433
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.433
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU (org.eclipse.wst.web_ui.feature.feature.group 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.433
+!MESSAGE Missing requirement: WSDL Model 1.2.1.v200908101510 (org.eclipse.wst.wsdl 1.2.1.v200908101510) requires 'bundle org.eclipse.emf.ecore [2.2.0,2.6.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.433
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.433
+!MESSAGE From: Eclipse Web Developer Tools 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU (org.eclipse.wst.web_ui.feature.feature.group 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.434
+!MESSAGE To: org.eclipse.wst.ws_ui.feature.feature.group [3.1.1.v200908101838-7I6FPnEtEnGxXCtv6tT8umXaSWto]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.434
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.434
+!MESSAGE From: WST Web Services Core 3.1.1.v200908101838-7L7RFTVFGtGcn6gr-qvfA9462A (org.eclipse.wst.ws_core.feature.feature.group 3.1.1.v200908101838-7L7RFTVFGtGcn6gr-qvfA9462A)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.434
+!MESSAGE To: org.eclipse.wst.wsdl [1.2.1.v200908101510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.434
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.434
+!MESSAGE From: WST Web Services UI 3.1.1.v200908101838-7I6FPnEtEnGxXCtv6tT8umXaSWto (org.eclipse.wst.ws_ui.feature.feature.group 3.1.1.v200908101838-7I6FPnEtEnGxXCtv6tT8umXaSWto)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.434
+!MESSAGE To: org.eclipse.wst.ws_core.feature.feature.group [3.1.1.v200908101838-7L7RFTVFGtGcn6gr-qvfA9462A]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:09:58.435
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.435
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU (org.eclipse.wst.web_ui.feature.feature.group 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE Missing requirement: WSDL Model 1.2.1.v200908101510 (org.eclipse.wst.wsdl 1.2.1.v200908101510) requires 'bundle org.eclipse.emf.ecore [2.2.0,2.6.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.435
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE From: Eclipse Web Developer Tools 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU (org.eclipse.wst.web_ui.feature.feature.group 3.1.1.v200908120400-7R77FSpEVw2xXR0CtKvX6bG6a2qU)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE To: org.eclipse.wst.ws_ui.feature.feature.group [3.1.1.v200908101838-7I6FPnEtEnGxXCtv6tT8umXaSWto]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.435
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE From: WST Web Services Core 3.1.1.v200908101838-7L7RFTVFGtGcn6gr-qvfA9462A (org.eclipse.wst.ws_core.feature.feature.group 3.1.1.v200908101838-7L7RFTVFGtGcn6gr-qvfA9462A)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE To: org.eclipse.wst.wsdl [1.2.1.v200908101510]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:09:58.435
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE From: WST Web Services UI 3.1.1.v200908101838-7I6FPnEtEnGxXCtv6tT8umXaSWto (org.eclipse.wst.ws_ui.feature.feature.group 3.1.1.v200908101838-7I6FPnEtEnGxXCtv6tT8umXaSWto)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:09:58.435
+!MESSAGE To: org.eclipse.wst.ws_core.feature.feature.group [3.1.1.v200908101838-7L7RFTVFGtGcn6gr-qvfA9462A]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:10:38.793
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:10:38.793
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.793
+!MESSAGE Software being installed: CXF Web Services (Incubation) 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm (org.eclipse.jst.ws.cxf.feature.feature.group 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.794
+!MESSAGE Missing requirement: J2EE Core Component 1.1.301.v200908181930 (org.eclipse.jst.j2ee.core 1.1.301.v200908181930) requires 'bundle com.ibm.icu [3.4.4,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.794
+!MESSAGE Missing requirement: J2EE Core Component 1.1.301.v200911302230 (org.eclipse.jst.j2ee.core 1.1.301.v200911302230) requires 'bundle com.ibm.icu [3.4.4,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:10:38.794
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.794
+!MESSAGE From: CXF Web Services Creation Core (Incubation) 0.4.0.v200909102327 (org.eclipse.jst.ws.cxf.creation.core 0.4.0.v200909102327)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.794
+!MESSAGE To: bundle org.eclipse.jst.j2ee.core [1.1.0,1.2.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:10:38.794
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.794
+!MESSAGE From: CXF Web Services (Incubation) 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm (org.eclipse.jst.ws.cxf.feature.feature.group 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.794
+!MESSAGE To: org.eclipse.jst.ws.cxf.creation.core [0.4.0.v200909102327]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:10:38.795
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:10:38.795
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.795
+!MESSAGE Software being installed: CXF Web Services (Incubation) 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm (org.eclipse.jst.ws.cxf.feature.feature.group 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.795
+!MESSAGE Missing requirement: J2EE Core Component 1.1.301.v200908181930 (org.eclipse.jst.j2ee.core 1.1.301.v200908181930) requires 'bundle com.ibm.icu [3.4.4,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.795
+!MESSAGE Missing requirement: J2EE Core Component 1.1.301.v200911302230 (org.eclipse.jst.j2ee.core 1.1.301.v200911302230) requires 'bundle com.ibm.icu [3.4.4,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:10:38.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.796
+!MESSAGE From: CXF Web Services Creation Core (Incubation) 0.4.0.v200909102327 (org.eclipse.jst.ws.cxf.creation.core 0.4.0.v200909102327)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.796
+!MESSAGE To: bundle org.eclipse.jst.j2ee.core [1.1.0,1.2.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:10:38.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.796
+!MESSAGE From: CXF Web Services (Incubation) 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm (org.eclipse.jst.ws.cxf.feature.feature.group 0.4.2.v200909110610-37c6EdfOdTWUv0huqCz-RnOsYm)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:10:38.796
+!MESSAGE To: org.eclipse.jst.ws.cxf.creation.core [0.4.0.v200909102327]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:11:04.566
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.567
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE Software being installed: WST Web Plug-in Developer Resources 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN (org.eclipse.wst.web_sdk.feature.feature.group 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE Missing requirement: org.eclipse.wst.server.discovery 1.0.1.v20100210 requires 'bundle org.eclipse.equinox.p2.core [1.0.100,2.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.567
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE From: WST Server Plug-in Developer Resources 3.1.1.v20090728b-7818a90K8IlG7Rp3b5hRfsOFdxYe (org.eclipse.wst.server_sdk.feature.feature.group 3.1.1.v20090728b-7818a90K8IlG7Rp3b5hRfsOFdxYe)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE To: org.eclipse.wst.server_ui.feature.feature.group [3.1.1.v20090727b-7B3DPAtJZRZxULQRALIM4256]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.567
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE From: WST Server UI 3.1.1.v20090727b-7B3DPAtJZRZxULQRALIM4256 (org.eclipse.wst.server_ui.feature.feature.group 3.1.1.v20090727b-7B3DPAtJZRZxULQRALIM4256)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE To: org.eclipse.wst.server.discovery [1.0.1.v20100210]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.567
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE From: WST Web Plug-in Developer Resources 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN (org.eclipse.wst.web_sdk.feature.feature.group 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.567
+!MESSAGE To: org.eclipse.wst.server_sdk.feature.feature.group [3.1.1.v20090728b-7818a90K8IlG7Rp3b5hRfsOFdxYe]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-01-15 22:11:04.587
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.587
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.587
+!MESSAGE Software being installed: WST Web Plug-in Developer Resources 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN (org.eclipse.wst.web_sdk.feature.feature.group 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.587
+!MESSAGE Missing requirement: org.eclipse.wst.server.discovery 1.0.1.v20100210 requires 'bundle org.eclipse.equinox.p2.core [1.0.100,2.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.587
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.587
+!MESSAGE From: WST Server Plug-in Developer Resources 3.1.1.v20090728b-7818a90K8IlG7Rp3b5hRfsOFdxYe (org.eclipse.wst.server_sdk.feature.feature.group 3.1.1.v20090728b-7818a90K8IlG7Rp3b5hRfsOFdxYe)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.587
+!MESSAGE To: org.eclipse.wst.server_ui.feature.feature.group [3.1.1.v20090727b-7B3DPAtJZRZxULQRALIM4256]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.587
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.588
+!MESSAGE From: WST Server UI 3.1.1.v20090727b-7B3DPAtJZRZxULQRALIM4256 (org.eclipse.wst.server_ui.feature.feature.group 3.1.1.v20090727b-7B3DPAtJZRZxULQRALIM4256)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.588
+!MESSAGE To: org.eclipse.wst.server.discovery [1.0.1.v20100210]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-01-15 22:11:04.588
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.588
+!MESSAGE From: WST Web Plug-in Developer Resources 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN (org.eclipse.wst.web_sdk.feature.feature.group 3.1.1.v200908120400-7H5778a3PixJeiw96KaEgaNvfKgN)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-01-15 22:11:04.588
+!MESSAGE To: org.eclipse.wst.server_sdk.feature.feature.group [3.1.1.v20090728b-7818a90K8IlG7Rp3b5hRfsOFdxYe]
+
+!ENTRY org.eclipse.ui 4 4 2013-01-15 22:25:47.909
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-01-15 22:25:50.829 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2013-01-15 22:26:24.854
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-01-15 22:26:24.855
+!MESSAGE A conflict occurred for CTRL+DEL:
+Binding(CTRL+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeInstance,Remove Result,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2013-01-15 22:29:09.744 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2013-01-15 22:29:21.649
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-01-15 22:29:21.649
+!MESSAGE A conflict occurred for CTRL+DEL:
+Binding(CTRL+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeInstance,Remove Result,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jst.server.core 4 0 2013-01-15 22:41:35.015
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-15 22:42:30.237
+!MESSAGE No valid Android XML Editor Delegate found for file /Servers/Tomcat v7.0 Server at localhost-config/server.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-15 22:44:07.653
+!MESSAGE No valid Android XML Editor Delegate found for file /Servers/Tomcat v7.0 Server at localhost-config/context.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-15 22:44:10.990
+!MESSAGE No valid Android XML Editor Delegate found for file /Servers/Tomcat v7.0 Server at localhost-config/tomcat-users.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-15 22:44:15.145
+!MESSAGE No valid Android XML Editor Delegate found for file /Servers/Tomcat v7.0 Server at localhost-config/web.xml [Res null, type null]
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2013-01-15 22:46:50.112
+!MESSAGE Invalid site reference %updateSiteURL in feature com.pramati.eclipse.feature.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2013-01-15 22:46:50.124
+!MESSAGE Invalid site reference %updateSiteURL in feature com.pramati.eclipse.feature.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2013-01-15 22:46:50.124
+!MESSAGE Invalid site reference %updateSiteURL in feature com.pramati.eclipse.feature.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2013-01-15 22:46:51.097
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.1.jar.
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:279)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+Caused by: java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.1.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	... 11 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1200 2013-01-15 22:46:51.116
+!MESSAGE Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.1.jar.
+!STACK 0
+java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.1.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+
+!ENTRY org.eclipse.equinox.p2.updatesite 4 0 2013-01-15 22:46:51.118
+!MESSAGE Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2013-01-15 22:46:51.281
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.1.jar.
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:279)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+Caused by: java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.1.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	... 11 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1200 2013-01-15 22:46:51.281
+!MESSAGE Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.1.jar.
+!STACK 0
+java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.1.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+
+!ENTRY org.eclipse.equinox.p2.updatesite 4 0 2013-01-15 22:46:51.282
+!MESSAGE Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2013-01-15 22:46:51.449
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.3.jar.
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:279)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+Caused by: java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.3.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	... 11 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1200 2013-01-15 22:46:51.449
+!MESSAGE Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.3.jar.
+!STACK 0
+java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.3.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+
+!ENTRY org.eclipse.equinox.p2.updatesite 4 0 2013-01-15 22:46:51.450
+!MESSAGE Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2013-01-15 22:46:51.608
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.3.jar.
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:279)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+Caused by: java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.3.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	... 11 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1200 2013-01-15 22:46:51.608
+!MESSAGE Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.3.jar.
+!STACK 0
+java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.3.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+
+!ENTRY org.eclipse.equinox.p2.updatesite 4 0 2013-01-15 22:46:51.608
+!MESSAGE Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2013-01-15 22:46:51.776
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.4.jar.
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:279)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+Caused by: java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.4.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	... 11 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1200 2013-01-15 22:46:51.777
+!MESSAGE Artifact not found: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.4.jar.
+!STACK 0
+java.io.FileNotFoundException: http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.4.jar
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:384)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:358)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:295)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:87)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:137)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.parseFeature(UpdateSite.java:264)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeaturesFromSite(UpdateSite.java:531)
+	at org.eclipse.equinox.internal.p2.updatesite.UpdateSite.loadFeatures(UpdateSite.java:437)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteFeaturesAction.perform(RemoteFeaturesAction.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.RemoteUpdateSiteAction.perform(RemoteUpdateSiteAction.java:50)
+	at org.eclipse.equinox.p2.publisher.Publisher$ArtifactProcess.run(Publisher.java:207)
+	at org.eclipse.equinox.p2.publisher.Publisher.publish(Publisher.java:237)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.generateMetadata(UpdateSiteMetadataRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:56)
+	at org.eclipse.wst.server.discovery.internal.model.ExtensionUpdateSite.getExtensions(ExtensionUpdateSite.java:74)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility$1.run(ExtensionUtility.java:201)
+
+!ENTRY org.eclipse.equinox.p2.updatesite 4 0 2013-01-15 22:46:51.777
+!MESSAGE Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.4.jar.
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-15 22:49:12.444
+!MESSAGE No valid Android XML Editor Delegate found for file /Test/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-01-16 06:45:29.997
+!MESSAGE No projects found for [/home/dimitry/workspace/Test/WebContent/WEB-INF/web.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-16 06:49:10.572
+!MESSAGE No valid Android XML Editor Delegate found for file /Test/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-16 07:23:27.078
+!MESSAGE No valid Android XML Editor Delegate found for file /Test/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-01-16 07:32:24.601
+!MESSAGE No valid Android XML Editor Delegate found for file /Test/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-01-16 08:07:33.662
+!MESSAGE No projects found for [/home/dimitry/workspace/Test/WebContent/WEB-INF/web.xml]
+
+!ENTRY org.eclipse.ui 4 4 2013-01-16 09:03:36.588
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.

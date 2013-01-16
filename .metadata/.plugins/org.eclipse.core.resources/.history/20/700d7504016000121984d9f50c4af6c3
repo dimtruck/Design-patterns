@@ -1,0 +1,6 @@
+package com.designpatterns.enums;
+
+public enum PatternType {
+	CREATIONAL,
+	BEHAVIORAL
+}

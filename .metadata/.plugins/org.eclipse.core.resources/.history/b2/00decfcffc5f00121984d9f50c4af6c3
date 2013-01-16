@@ -1,0 +1,18 @@
+package com.designpatterns.enums;
+
+public enum Language {
+	JAVA("java"),
+	CSHARP("csharp"),
+	RUBY("ruby"),
+	JAVASCRIPT("javascript"),
+	ERLANG("erlang");
+	
+	private final String name;
+	Language(String name){
+		this.name = name;
+	}
+	
+	public String languageName(){
+		return this.name;
+	}
+}

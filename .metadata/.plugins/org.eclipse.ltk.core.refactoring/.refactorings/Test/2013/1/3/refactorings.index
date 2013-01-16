@@ -1,0 +1,9 @@
+1358319105489	Move 1 resources to 'WebContent'
+1358348840188	Rename type 'Home'
+1358350946480	Rename type 'Pattern'
+1358352178862	Delete element
+1358353273979	Rename type 'CreationalFactory'
+1358356006328	Extract method 'retrieveLanguage'
+1358356514196	Extract interface 'EnumInterface'
+1358356536951	Delete element
+1358356717116	Delete element

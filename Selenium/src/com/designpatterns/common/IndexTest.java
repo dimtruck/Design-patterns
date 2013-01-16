@@ -1,0 +1,18 @@
+package com.designpatterns.common;
+
+import org.junit.Assert;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class IndexTest {
+	
+	@Test
+	public void HomeTest(){
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://localhost:8080/Test");
+		Assert.assertTrue(driver.getTitle().equals("Insert title here"));
+		driver.quit();
+	}
+}

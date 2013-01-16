@@ -1,0 +1,11 @@
+package com.designpatterns.enums;
+
+import com.designpatterns.factories.interfaces.LanguageFactory;
+
+public interface EnumInterface {
+
+	public abstract String languageName();
+
+	public abstract LanguageFactory getFactory();
+
+}
