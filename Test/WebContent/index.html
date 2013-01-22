@@ -5,6 +5,11 @@
 		<title>Design Patterns</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<style type="text/css">
+			.specific-style-content div {
+				margin-bottom:5px;
+			}
+		</style>
 	</head>
 	<body>
 		<div data-role="page" id="home">
@@ -29,12 +34,46 @@
 			<div data-role="content">	
 				<ul data-role="listview" data-inset="true" data-filter="true" data-bind="foreach: patterns, jqmRefreshList: patterns">
 					<!-- <li><a href="pattern?language=java">Java Patterns</a></li> -->
-					<li><a href="#" data-bind="attr: {title: name}, text: name"></a></li>
+					<li><a href="#" data-bind="attr: {title: name}, text: name, click: $parent.gotopattern"></a></li>
 					<!-- <li><a href="pattern?language=csharp">C# Patterns</a></li>
 					<li><a href="pattern?language=ruby">Ruby Patterns</a></li>
 					<li><a href="pattern?language=javaScript">JavaScript Patterns</a></li>
 					<li><a href="pattern?language=erlang">Erlang Patterns</a></li> -->
 				</ul>
+			</div>
+		</div>
+		<div data-role="page" id="specific-pattern">
+			<div data-role="header">
+				<h1>Pattern</h1>
+			</div>
+			<div class="specific-pattern-content" data-role="content" data-bind="with: pattern">
+				<div data-role="collapsible" data-collapsed="false" data-content-theme="c">
+					<h3><span  data-bind="text: name"></span></h3>
+					<ul data-role="listview" data-inset="true">
+						<li>
+							<h3>Description</h3>
+							<p data-bind="text: description"></p>
+						</li>
+						<li>
+							<h3>When to use it</h3>
+							<p data-bind="text: useCase"></p>
+						</li>
+						<li>
+							<h3>UML Representation</h3>
+							<p><img data-bind="attr: {src: image}"/></p>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="false" data-content-theme="c">
+					<h3>Examples</h3>
+					<ul data-role="listview" data-inset="true", data-bind="foreach: examples, jqmRefreshList: examples">
+						<li>
+							<img src="images/album-bb.jpg" />
+							<h3 data-bind="text: name"></h3>
+							<p data-bind="text: code"></p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>
@@ -45,6 +84,16 @@
 		function Pattern(data){
 			this.name = data.name;
 			this.type = data.type;
+			this.useCase = data.useCase;
+			this.description = data.description;
+			this.image = data.image;
+			this.examples = data.examples;
+			/*this.name = ko.observable(data.name);
+			this.type = ko.observable(data.type);
+			this.useCase = ko.observable(data.useCase);
+			this.description = ko.observable(data.description);
+			this.image = ko.observable(data.image);
+			this.examples = ko.observable(data.examples);*/
 		}
 		function LanguagesViewModel(){
 			var self = this;
@@ -57,6 +106,7 @@
            	];
 			
 			self.patterns = ko.observableArray([]);
+			self.pattern = ko.observable();
 			
 			self.gotopatterns = function(language){
 				$.getJSON(language.href, function(allData) {
@@ -65,6 +115,12 @@
 			    });  
 				$.mobile.changePage($('#language-patterns'));
 			};
+			
+			self.gotopattern = function(item){
+				self.pattern(item);
+				$.mobile.changePage($('#specific-pattern'));
+			};
+			
 			ko.bindingHandlers.jqmRefreshList = {
 				update: function (element, valueAccessor) {
     				ko.utils.unwrapObservable(valueAccessor()); //just to create a dependency
@@ -86,9 +142,6 @@
 		$(document).ready(function(){
 			ko.applyBindings(new LanguagesViewModel());
 			
-		});
-		$('#language-patterns').bind('pageinit', function() {
-			$('ul').listview('refresh');
 		});
 		
 	</script>
