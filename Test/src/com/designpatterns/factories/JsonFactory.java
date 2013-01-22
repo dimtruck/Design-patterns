@@ -61,6 +61,23 @@ public class JsonFactory {
 		return patternList;
 	}
 
+	public static JSONArray getJsonPatterns(String realContextPath, String filePath){
+		JSONParser parser = new JSONParser();
+		try {
+			return (JSONArray) parser.parse(new FileReader(realContextPath + File.separator + filePath));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (ParseException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return new JSONArray();
+	}
+	
 	private static PatternType retrievePatternType(String patternType) {
 		for(PatternType patternTypeEnum : PatternType.values()){
 			if(patternTypeEnum.patternName().equals(patternType))

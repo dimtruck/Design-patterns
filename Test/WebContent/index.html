@@ -1,16 +1,95 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Design Patterns</title>
-</head>
-<body>
-	<ul>
-		<li><a href="pattern?language=java">Java Patterns</a></li>
-		<li><a href="pattern?language=csharp">C# Patterns</a></li>
-		<li><a href="pattern?language=ruby">Ruby Patterns</a></li>
-		<li><a href="pattern?language=javaScript">JavaScript Patterns</a></li>
-		<li><a href="pattern?language=erlang">Erlang Patterns</a></li>
-	</ul>
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Design Patterns</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	</head>
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header">
+				<h1>Supported Languages</h1>
+			</div>
+			<div data-role="content">	
+				<ul data-role="listview" data-inset="true" data-filter="true" data-bind="foreach: languages">
+					<!-- <li><a href="pattern?language=java">Java Patterns</a></li> -->
+					<li><a href="#" data-bind="attr: {title: details}, text: name, click: $parent.gotopatterns"></a></li>
+					<!-- <li><a href="pattern?language=csharp">C# Patterns</a></li>
+					<li><a href="pattern?language=ruby">Ruby Patterns</a></li>
+					<li><a href="pattern?language=javaScript">JavaScript Patterns</a></li>
+					<li><a href="pattern?language=erlang">Erlang Patterns</a></li> -->
+				</ul>
+			</div>
+		</div>
+		<div data-role="page" id="language-patterns">
+			<div data-role="header">
+				<h1>Patterns</h1>
+			</div>
+			<div data-role="content">	
+				<ul data-role="listview" data-inset="true" data-filter="true" data-bind="foreach: patterns, jqmRefreshList: patterns">
+					<!-- <li><a href="pattern?language=java">Java Patterns</a></li> -->
+					<li><a href="#" data-bind="attr: {title: name}, text: name"></a></li>
+					<!-- <li><a href="pattern?language=csharp">C# Patterns</a></li>
+					<li><a href="pattern?language=ruby">Ruby Patterns</a></li>
+					<li><a href="pattern?language=javaScript">JavaScript Patterns</a></li>
+					<li><a href="pattern?language=erlang">Erlang Patterns</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+	<script type="text/javascript">
+		function Pattern(data){
+			this.name = data.name;
+			this.type = data.type;
+		}
+		function LanguagesViewModel(){
+			var self = this;
+			self.languages = [
+            	{ details:'Java Patterns', name:'Java', href:"pattern?language=java" },
+            	{ details:'C# Patterns', name:'C#', href:"#language-patterns?language=csharp" },
+            	{ details:'JavaScript Patterns', name:'JavaScript', href:"#language-patterns?language=javascript" },
+            	{ details:'Ruby Patterns', name:'Ruby', href:"#language-patterns?language=ruby" },
+            	{ details:'Erlang Patterns', name:'Erlang', href:"#language-patterns?language=erlang" }
+           	];
+			
+			self.patterns = ko.observableArray([]);
+			
+			self.gotopatterns = function(language){
+				$.getJSON(language.href, function(allData) {
+			        var mappedPatterns = $.map(allData, function(item) { return new Pattern(item) });
+			        self.patterns(mappedPatterns);
+			    });  
+				$.mobile.changePage($('#language-patterns'));
+			};
+			ko.bindingHandlers.jqmRefreshList = {
+				update: function (element, valueAccessor) {
+    				ko.utils.unwrapObservable(valueAccessor()); //just to create a dependency
+    				var listview = $(element).parents()
+                		.andSelf()
+                		.filter("[data-role='listview']");
+
+					if (listview) {
+ 						try {
+   							$(listview).listview('refresh');
+ 						} catch (e) {
+						}
+					}
+				}
+			};
+
+		}
+		
+		$(document).ready(function(){
+			ko.applyBindings(new LanguagesViewModel());
+			
+		});
+		$('#language-patterns').bind('pageinit', function() {
+			$('ul').listview('refresh');
+		});
+		
+	</script>
 </html>

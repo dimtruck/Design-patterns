@@ -2,9 +2,6 @@ package com.designpatterns.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.EnumSet;
-import java.util.Enumeration;
-import java.util.Map;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -14,10 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.designpatterns.enums.Language;
-import com.designpatterns.enums.PatternType;
 import com.designpatterns.factories.interfaces.LanguageFactory;
-import com.designpatterns.factories.interfaces.PatternFactory;
-import com.designpatterns.templates.Template;
 
 /**
  * Servlet implementation class Home
@@ -25,7 +19,6 @@ import com.designpatterns.templates.Template;
 @WebServlet( name="PatternServlet", displayName="Pattern Servlet", urlPatterns = {"/pattern"}, loadOnStartup=1)
 public class PatternServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private Map<PatternType,Template> patternTypeMap = null;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -51,8 +44,9 @@ public class PatternServlet extends HttpServlet {
 		String realContextPath = context.getRealPath(request.getContextPath()); 
 		
 		PrintWriter printWriter = response.getWriter();
+		response.setContentType("application/json");
 		if(patternRequest == null)
-			printWriter.write(languageFactory.buildPage(realContextPath));
+			printWriter.print(languageFactory.buildJson(realContextPath));
 		else 
 			printWriter.write(languageFactory.buildPatternTypePage(null));
 		printWriter.flush();

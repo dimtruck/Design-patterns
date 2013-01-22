@@ -2,6 +2,9 @@ package com.designpatterns.templates;
 
 import java.util.List;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
 import com.designpatterns.entities.Pattern;
 import com.designpatterns.enums.PatternType;
 
@@ -24,5 +27,28 @@ public class BehavioralTemplate implements Template {
 		}
 		sb.append("</ul>");
 		return sb;
+	}
+
+
+	@Override
+	public JSONArray createJson(String language, JSONArray patterns) {
+		JSONArray array = new JSONArray();
+		for(Object pattern: patterns){
+			if(retrievePatternType((String)((JSONObject)pattern).get("type")) == PatternType.BEHAVIORAL){
+				array.add(pattern);
+			}
+		}
+		return array;
+	}
+	
+	private static PatternType retrievePatternType(String patternType) {
+		for(PatternType patternTypeEnum : PatternType.values()){
+			if(patternTypeEnum.patternName().equals(patternType))
+			{
+				return patternTypeEnum;
+			}
+		}
+		
+		return PatternType.NONE;
 	}
 }
